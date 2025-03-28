@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="pricing-container">
+        <h2>Bundle & Save</h2>
+
+        <!-- 1 Pair Option -->
+        <div class="option" onclick="selectOption(1, 195)">
+            <input type="radio" name="pricing" id="pair1">
+            <label for="pair1">
+                <span>1 Pair</span>
+                <span class="price">DKK 195.00</span>
+                <span class="discount">50% OFF</span>
+            </label>
+        </div>
+
+        <!-- 2 Pair Option -->
+        <div class="option popular" onclick="selectOption(2, 345)">
+            <input type="radio" name="pricing" id="pair2">
+            <label for="pair2">
+                <span>2 Pair</span>
+                <span class="price">DKK 345.00</span>
+                <span class="discount">Most Popular - 40% OFF</span>
+            </label>
+        </div>
+
+        <!-- 3 Pair Option -->
+        <div class="option" onclick="selectOption(3, 528)">
+            <input type="radio" name="pricing" id="pair3">
+            <label for="pair3">
+                <span>3 Pair</span>
+                <span class="price">DKK 528.00</span>
+                <span class="discount">60% OFF</span>
+            </label>
+            
+            <!-- Size & Color Dropdowns (only visible for 3 pairs) -->
+            <div class="size-color-options">
+                <label>#1 Size:
+                    <select><option>S</option><option>M</option><option>L</option></select>
+                </label>
+                <label>Color:
+                    <select><option>Red</option><option>Blue</option><option>Black</option></select>
+                </label>
+
+                <label>#2 Size:
+                    <select><option>S</option><option>M</option><option>L</option></select>
+                </label>
+                <label>Color:
+                    <select><option>Red</option><option>Blue</option><option>Black</option></select>
+                </label>
+            </div>
+        </div>
+
+        <!-- Total Price -->
+        <p class="total">Total: <span id="totalPrice">DKK 345.00</span></p>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">+ Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
